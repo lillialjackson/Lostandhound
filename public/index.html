@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet"  type="text/css" href="./stylesheets/index.css">
+    <title>Lost&Hound</title>
+  </head>
+  <body>
+    <div class="content">
+        <h1> Lost & Hound </h1>
+        <p> Add your dog to the Lost & Hound community and never fear when your little guy decides to take a walkabout! </p>
+        <div class="">
+          <h3>Submit Your Dog! </h3>
+            <div class="form">
+              Dog Name : <br>
+              <input id= "dogName" type="text" name = "dogName" required> <br>
+              Breed: <br>
+              <input id= "breed" type="text" name = "breed" required> <br>
+              Age: <br>
+              <input id= "age" type="number" name = "age" min ="0" max = "25" required> <br>
+              Owner Name : <br>
+              <input id= "ownerName" type="text" name = "ownerName" required> <br>
+              Email : <br>
+              <input id= "email" type="email" name = "email" required> <br>
+              Phone : <br>
+              <input id= "phone" type="tel" name = "phone" placeholder="ex. 1234567890"> <br>
+              <input id= "submitButton" class="button" type="submit" value="Submit">
+            </div>
+        </div>
+        <div class="search">
+          <h3> Find An Owner! </h3>
+          Dog Name : <br>
+          <input id= "searchDogName" type="text" name = "dogName"> <br>
+          <input id= "searchButton" class="button" type="submit" value="Search">
+        </div>
+        <table id="resultstable">
+            <tr>
+              <th>Owner Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+            </tr>
+        </table>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="./javascripts/index.js"> </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>
