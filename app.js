@@ -4,10 +4,8 @@ const cors = require('cors');
 const knex = require('knex')({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
-    user : 'DB_USER',
-    password : 'DB_PASSWORD',
-    database : 'lost_and_hound'
+    connectionString : process.env.DATABASE_URL,
+    ssl: true
   }
 });;
 
@@ -71,4 +69,6 @@ app.get('/search', (req, res) => {
 
 
 
-app.listen(3050, () => console.log('Example app listening on port 3050!'));
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`app is running on port ${process.env.PORT}`);
+})
